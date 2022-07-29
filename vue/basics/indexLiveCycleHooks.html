@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vue 3 basics</title>
+    <style>
+      .box {
+        background-color: purple;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    Hello vue
+    <div id="app">
+        <div>{{greeting}}</div>
+      <button @click="toggleBox">Toggle Box</button>
+      <test-box v-if="isVisible" />
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      let app = Vue.createApp({
+        data: function () {
+          return {
+            isVisible: false,
+            greeting: 'hello vue syntax'
+          };
+        },
+        methods: {
+          toggleBox: function () {
+            this.isVisible = !this.isVisible;
+          },
+        },
+        updated() {
+          console.log("updated");
+        },
+      });
+
+      app.component("test-box", {
+        template: `
+                    <div class="box"></div>
+                `,
+        created() {
+          console.log("created");
+        },
+        mounted() {
+          console.log("mounted");
+        },
+        unmounted() {
+          console.log("unmounted");
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>
