@@ -40,3 +40,6 @@ move inside the server folder, and run migration command
  dotnet ef migrations add Initial
  dotnet ef database update  // updates the database
  ````
+
+ # add cln to git
+ git add BlazorFullStackCrud.sln -f
