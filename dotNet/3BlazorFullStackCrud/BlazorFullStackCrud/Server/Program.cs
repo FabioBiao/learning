@@ -13,9 +13,8 @@ builder.Services.AddRazorPages();
 
 // add DB connection
 builder.Services.AddDbContext<DataContext>(options =>
-    // options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection")));
-);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    // options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

@@ -1,3 +1,8 @@
+- https://www.youtube.com/watch?v=K_P-qJj_8Bg
+
+# create project
+Create a Blazor WebAssembly app,  with asp.net core hosted (ticket) and configure for https
+
 # run project
 dotnet run
 or 
@@ -10,11 +15,14 @@ Then import them to program.cs and imports.razor
 
 
 # entity framework configuration
+- String connection to SqlServer"Server=localhost;Database=master;Trusted_Connection=True;"
 - add dependency of add a class
 
 add nuget package -> install microsoft.entityFrameworkCore
 and install microsoft.entityFrameworkCore.Design if you want to create migrations as well.
 and microfot.entityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Tools > ??
 
 -Opening package manager console   "View -> other windows -> package manager console"
 
@@ -29,5 +37,6 @@ move inside the server folder, and run migration command
 ```` console
  cd .\BlazorFullStackCrud\server
  dotnet ef migrations Initial  // creates the migrations folder 
+ dotnet ef migrations add Initial
  dotnet ef database update  // updates the database
  ````
