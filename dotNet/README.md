@@ -97,3 +97,17 @@ Copy
 "console": "integratedTerminal",
 Save your changes.
 ```
+
+# starting your project
+- dotnet new sln -o CloudCustomers
+
+# add projects to the solution
+- dotnet sln add **/*.csproj
+for windows
+- dotnet sln add (ls -r **/*.csproj)
+
+# how to add project dependencies
+- right click on the project -> Add -> project reference -> select project you want to create dependency
+
+# create API project
+- dotnet new webapi -o CloudCustomers.API
