@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JwtWebApiTutorial.Controllers
 {
@@ -18,11 +19,24 @@ namespace JwtWebApiTutorial.Controllers
 
         private readonly IConfiguration _configuration;
 
-        // private readonly IUserService _userService;
-        public AuthController(IConfiguration configuration)
+        private readonly IUserService _userService;
+        public AuthController(IConfiguration configuration, IUserService userService )
         {
             _configuration = configuration;
-            // _userService = userService;
+            _userService = userService;
+        }
+
+        // endpoint called when 
+        [HttpGet, Authorize]
+        public ActionResult<string> GetMe()
+        {
+            // var userName = User?.Identity?.Name;
+            // var userName2 = User.FindFirstValue(ClaimTypes.Name);
+            // var role = User.FindFirstValue(ClaimTypes.Role);
+            // return Ok(new { userName, userName2, role});
+            var userName = _userService.GetMyName();
+            return Ok(userName);
+
         }
 
         [HttpPost("register")]

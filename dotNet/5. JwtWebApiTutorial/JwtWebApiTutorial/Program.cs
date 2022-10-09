@@ -1,3 +1,4 @@
+global using JwtWebApiTutorial.Services.UserService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -14,8 +15,10 @@ builder.Services.AddEndpointsApiExplorer();
 // builder.Services.AddSwaggerGen();
 
 /////////////////////////////////
+// injecting new services
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddHttpContextAccessor(); // addind default implementation for HttpContextAccessor used in UserService
 // custom code for authentication
-
 // first builder adds tokens to swagger, to allow our tests
 builder.Services.AddSwaggerGen(options =>
 {
