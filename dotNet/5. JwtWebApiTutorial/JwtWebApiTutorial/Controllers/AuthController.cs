@@ -72,6 +72,29 @@ namespace JwtWebApiTutorial.Controllers
             return Ok(token);
         }
 
+        // this can be called by the frontend to refresh the token
+        [HttpPost("refresh-token")]
+        public async Task<ActionResult<string>> RefreshToken()
+        {
+            var refreshToken = Request.Cookies["refreshToken"];
+            // on a DB we need to search for the user and validate 
+            if (!user.RefreshToken.Equals(refreshToken))
+            {
+                return Unauthorized("Invalid Refresh Token.");
+            }
+            else if(user.TokenExpires < DateTime.Now)
+            {
+                return Unauthorized("Token expired.");
+            }
+
+            string token = CreateToken(user);
+            var newRefreshToken = GenerateRefreshToken();
+            SetRefreshToken(newRefreshToken);
+
+            return Ok(token);
+        }
+
+        // set the cookie with teh generated token
         private void SetRefreshToken(RefreshToken newRefreshToken)
         {
             var cookieOptions = new CookieOptions
