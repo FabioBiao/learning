@@ -1,0 +1,13 @@
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.deps.json
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.runtimeconfig.json
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.runtimeconfig.dev.json
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.dll
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.pdb
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csproj.AssemblyReference.cache
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.AssemblyInfoInputs.cache
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.AssemblyInfo.cs
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.dll
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.pdb
+C:\Users\fabio\Downloads\csharp-fundamentals-dev\02\demos\end\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.genruntimeconfig.cache
