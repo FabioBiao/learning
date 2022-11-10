@@ -1,0 +1,22 @@
+POST http://localhost:5286/breakfasts
+Content-Type: application/json
+
+{
+    "name": "Vegan Pankekas",
+    "description": "this is my venga pankekas its very healthy and i recomend it to everyone",
+    "startDateTime": "2022-04-08T08:00:00",
+    "endDateTime": "2022-04-08T11:00:00",
+    "savory": [
+        "Oatmeal",
+        "Avocado Toast",
+        "Omelette",
+        "Salad"
+    ],
+    "Sweet": [
+        "Cookie"
+    ]
+}
+
+###
+
+GET https://localhost:7094/Breakfasts/b38613f5-8364-477e-93b8-cdeb720c8eed
