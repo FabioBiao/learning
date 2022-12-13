@@ -4,12 +4,15 @@
 - dotnet new classlib -o BuberBreakfast.Contracts
 - dotnet new webapi -o BuberBreakfast
 
-## add projects to the solution
+# visual studio code 
+- ctrl + shift + p > open commands
 - code .   | opens visual studio on current directory
+
+## add projects to the solution
 - dotnet sln add .\BuberBreakfast.Contrats .\BuberBreakfast\
 - or add all projects recursively "dotnet sln add (ls -r **/*.csproj)
 - dotnet build
-- dotnet run
+- dotnet run   | run --project .\BuberBreakfast\
 - dotnet watch run --project .\Projecthere.Api\
 
 - dotnet add .\BuberBreakfast\ package ErrorOr    
@@ -226,12 +229,19 @@ DELETE /breakfasts/{{id}}
 - [ErrorOr](https://github.com/amantinband/error-or) - A simple, fluent discriminated union of an error or a result.
 
 # VSCode Extensions
-
-- [VSCode Rest Client](https://github.com/Huachao/vscode-restclient) - REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
+- [VSCode Rest Client | Rest Client](https://github.com/Huachao/vscode-restclient) - REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
 , Settings -> Packages -> markdown-preview-enhanced -> Settings.
 , select your atom theme
 - [VSCode Markdown Preview Enhanced](https://github.com/shd101wyy/vscode-markdown-preview-enhanced) - Markdown Preview Enhanced is an extension that provides you with many useful functionalities for previewing markdown files. if we want to make multiple definitions of requests inside the same file write ### between the requests
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) autocompletes paths
+- [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)
 
+- [Roslynator]](https://github.com/dotnet/roslyn) - analysor
+- Auto-Using for C#
+- .NET Core Test Explorer - helps with testing
+- [NuGet Reverse Package Search](https://marketplace.visualstudio.com/items?itemName=jesschadwick.nuget-reverse-package-search) (ctrç + shift + p -> then write nugget reverse.. and it searchs for the missing package)
+- EditorConfig for VS Code
+- [jwt-decoder](https://marketplace.visualstudio.com/items?itemName=jflbr.jwt-decoder)
 # Disclaimer
 
 This is an educational project. The source code is licensed under the MIT license.
